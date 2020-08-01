@@ -20,8 +20,7 @@ MBP app dir -  /Applications/MAMP/htdocs and /Applications/MAMP/conf/ssl
   - debugging
   - performance
   - test
-  - wordpress version + wordpress compatibility
-   - download and install 1 version down of WordPress, creating multiple development sites, each running different WordPress versions for testing.
+  - wordpress version + wordpress compatibility: download and install 1 version down of WordPress, creating multiple development sites, each running different WordPress versions for testing.
 
 
 ------------------------------------------------------------
