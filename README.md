@@ -6,23 +6,22 @@ Dribble Web Interface
 MBP app dir -  /Applications/MAMP/htdocs and /Applications/MAMP/conf/ssl
 
 ## Local Server Stack - XAMPP for OS X
-https://www.smashingmagazine.com/2018/04/wordpress-local-development-beginners-setup-deployment/
-https://www.apachefriends.org/index.html
-https://dev.to/josiemhardy/how-to-fix-error-403-forbidden-access-new-xampp-security-concept-on-macbook-n2k
-https://wordpress.org/support/article/creating-database-for-wordpress/
-https://stackoverflow.com/questions/46383398/xampp-installed-on-mac-not-accessible-via-localhost-only-local-ip
+ - https://www.smashingmagazine.com/2018/04/wordpress-local-development-beginners-setup-deployment/
+ - https://www.apachefriends.org/index.html
+ - https://dev.to/josiemhardy/how-to-fix-error-403-forbidden-access-new-xampp-security-concept-on-macbook-n2k
+ - https://wordpress.org/support/article/creating-database-for-wordpress/
+ - https://stackoverflow.com/questions/46383398/xampp-installed-on-mac-not-accessible-via-localhost-only-local-ip
 
-(Apache + MySQL) or (Nginx + MySQL)
+- (Apache + MySQL) or (Nginx + MySQL)
+- Backend: PHP or  Python
+- IDE: Atom
 
-Backend: PHP or  Python
-IDE: Atom
-
-Development Steps:
-debugging
-performance
-test
-wordpress version + wordpress compatibility
-  - download and install 1 version down of WordPress, creating multiple development sites, each running different WordPress versions for testing.
+- Development Steps:
+  - debugging
+  - performance
+  - test
+  - wordpress version + wordpress compatibility
+   - download and install 1 version down of WordPress, creating multiple development sites, each running different WordPress versions for testing.
 
 
 ------------------------------------------------------------
