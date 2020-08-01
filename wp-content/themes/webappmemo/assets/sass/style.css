@@ -1,20 +1,36 @@
-body
-{
-text-align: left;
+/*
+Theme Name: Web App Memo
+Text Domain: webappmemo
+Version: 1.0
+Requires at least: 5.4.2
+Requires PHP: 5.2.4
+Description: Web App Memo theme is an experimental application and work in progress.
+Tags: webapp webappmemo web
+Author: Mitso Qalaba
+Author URI: http://192.168.64.2/webapp/
+Theme URI: http://192.168.64.2/webapp/
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+
+All files, unless otherwise stated, are released under the GNU General Public
+License version 2.0 (http://www.gnu.org/licenses/gpl-2.0.html)
+*/
+
+body {
+  text-align: left;
 }
-#ttr_sidebar
-{
-border-left: 1px solid black;
+
+
+
+
+#ttr_footer {
+  width: 100%;
+  border-top: 1px #a2a2a2 solid;
+  text-align: center;
 }
-#ttr_footer
-{
-width: 100%;
-border-top: 1px #a2a2a2 solid;
-text-align: center;
-}
-.title
-{
-font-size: 11pt;
-font-family: verdana;
-font-weight: bold;
+
+.title {
+  font-size: 11pt;
+  font-family: verdana;
+  font-weight: bold;
 }

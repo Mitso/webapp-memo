@@ -4,8 +4,8 @@ Text Domain: webappmemo
 Version: 1.0
 Requires at least: 5.4.2
 Requires PHP: 5.2.4
-Description: Our default theme for 2020 is designed to take full advantage of the flexibility of the block editor. Organizations and businesses have the ability to create dynamic landing pages with endless layouts using the group and column blocks. The centered content column and fine-tuned typography also makes it perfect for traditional blogs. Complete editor styles give you a good idea of what your content will look like, even before you publish. You can give your site a personal touch by changing the background colors and the accent color in the Customizer. The colors of all elements on your site are automatically calculated based on the colors you pick, ensuring a high, accessible color contrast for your visitors.
-Tags: blog, one-column, custom-background, custom-colors, custom-logo, custom-menu, editor-style, featured-images, footer-widgets, full-width-template, rtl-language-support, sticky-post, theme-options, threaded-comments, translation-ready, block-styles, wide-blocks, accessibility-ready
+Description: Web App Memo theme is an experimental application and work in progress.
+Tags: webapp webappmemo web
 Author: Mitso Qalaba
 Author URI: http://192.168.64.2/webapp/
 Theme URI: http://192.168.64.2/webapp/
@@ -14,29 +14,96 @@ License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
 All files, unless otherwise stated, are released under the GNU General Public
 License version 2.0 (http://www.gnu.org/licenses/gpl-2.0.html)
-
-This theme, like WordPress, is licensed under the GPL.
-Use it to make something cool, have fun, and share what you've learned
-with others.
 */
 
+:root {
+  --light-grayish-blue: #E4E9F3;
+  --very-light-grayish-blue: #F7F8FB;
+  --very-dark-desaturated-blue: #1d2037;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;500;700&display=swap');
+
+html, body {
+  height: 100%;
+}
+
 body {
+  background-color: var(--light-grayish-blue);
+  color: #B8BCC9;
+  font-family: 'Roboto', Helvetica, Arial, sans-serif;
+  font-size: 16px;
+  margin: 0;
+  text-align: left;
+  width: 100%;
+}
+
+h1,h2,h3,h4,h5,h6 {
+  color: var(--very-dark-desaturated-blue);
+  font-weight: 500;
+}
+
+a {
+  color: var(--very-dark-desaturated-blue);
+}
+
+.wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+.sidebar {
+  background-color: var(--very-light-grayish-blue);
+  padding: 0 4em;
+  width: 15%;
+}
+.container {
+  background: #fff;
+  padding: 0 4em;
+  width: 85%;
+}
+
+
+.header {
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+}
+.header__category {}
+.header__category-title {
+  font-weight: 600;
+}
+.header__search {}
+
+.search {
+  background-color: transparent;
+  border: 1px solid var(--light-grayish-blue);
+  border-radius: 3px;
+  color: var(--light-grayish-blue);
+  font-size: 16px;
+  padding: 10px;
+  text-align: left;
+  width: 250px;
+}
+
+.logo {}
+.title {}
+.title__name {
   text-align: left;
 }
-
-#ttr_sidebar {
-  border-left: 1px solid black;
-}
-
-
-#ttr_footer {
-  width: 100%;
-  border-top: 1px #a2a2a2 solid;
-  text-align: center;
-}
-
-.title {
-  font-size: 11pt;
-  font-family: verdana;
+.title__anchor {
   font-weight: bold;
+  text-decoration: none;
+  text-transform: lowercase;
+}
+
+.article__error {
+  color: var(--very-dark-desaturated-blue);
+  font-size: 18px;
+}
+
+.footer {
+  padding: 1em 0 1em;
+  display: block;
+  overflow: auto;
+  width: 100%;
 }

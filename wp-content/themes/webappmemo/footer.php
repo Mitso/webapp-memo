@@ -1,6 +1,7 @@
-<div id= "ttr_footer">
-<h1>FOOTER</h1>
-</div>
-</div>
-</body>
+        </div>
+        </div>
+        <footer class="footer"></footer>
+      </section>
+    </div>
+  </body>
 </html>
