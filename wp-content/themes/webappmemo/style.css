@@ -1,0 +1,42 @@
+/*
+Theme Name: Web App Memo
+Text Domain: webappmemo
+Version: 1.0
+Requires at least: 5.4.2
+Requires PHP: 5.2.4
+Description: Our default theme for 2020 is designed to take full advantage of the flexibility of the block editor. Organizations and businesses have the ability to create dynamic landing pages with endless layouts using the group and column blocks. The centered content column and fine-tuned typography also makes it perfect for traditional blogs. Complete editor styles give you a good idea of what your content will look like, even before you publish. You can give your site a personal touch by changing the background colors and the accent color in the Customizer. The colors of all elements on your site are automatically calculated based on the colors you pick, ensuring a high, accessible color contrast for your visitors.
+Tags: blog, one-column, custom-background, custom-colors, custom-logo, custom-menu, editor-style, featured-images, footer-widgets, full-width-template, rtl-language-support, sticky-post, theme-options, threaded-comments, translation-ready, block-styles, wide-blocks, accessibility-ready
+Author: Mitso Qalaba
+Author URI: http://192.168.64.2/webapp/
+Theme URI: http://192.168.64.2/webapp/
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+
+All files, unless otherwise stated, are released under the GNU General Public
+License version 2.0 (http://www.gnu.org/licenses/gpl-2.0.html)
+
+This theme, like WordPress, is licensed under the GPL.
+Use it to make something cool, have fun, and share what you've learned
+with others.
+*/
+
+body {
+  text-align: left;
+}
+
+#ttr_sidebar {
+  border-left: 1px solid black;
+}
+
+
+#ttr_footer {
+  width: 100%;
+  border-top: 1px #a2a2a2 solid;
+  text-align: center;
+}
+
+.title {
+  font-size: 11pt;
+  font-family: verdana;
+  font-weight: bold;
+}
