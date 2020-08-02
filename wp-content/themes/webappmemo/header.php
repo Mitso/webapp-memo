@@ -26,9 +26,9 @@
 
   <?php wp_head(); ?>
 
-  <script type="text/javascript" src="<?php echo get_stylesheet_directory_uri().'/js/jquery-ui.min.js'; ?>">
-  </script>
-  <link rel="stylesheet" href="<?php echo get_stylesheet_directory_uri().'/sass/style.css'; ?>">
+  <link rel="stylesheet" href="<?php echo get_stylesheet_directory_uri().'/assets/css/layout.css'; ?>">
+  <link rel="stylesheet" href="<?php echo get_stylesheet_directory_uri().'/assets/css/header.css'; ?>">
+  <link rel="stylesheet" href="<?php echo get_stylesheet_directory_uri().'/assets/css/article-post.css'; ?>">
   <link rel="stylesheet" href="<?php bloginfo('stylesheet_url'); ?>">
 </head>
 <body <?php body_class(); ?>>
@@ -39,6 +39,9 @@
     <section class="sidebar">
       <div class="logo">
         <!-- UPLOAD IMAGE --->
+        <div class="custom">
+          <?php the_custom_logo(); ?>
+        </div>
         <div class="title">
           <?php if ( is_front_page() ) : ?>
             <h1 class="title__name">
@@ -47,26 +50,32 @@
               </a>
             </h1>
           <?php else : ?>
-            <p class="title__name">
+            <h1 class="title__name">
               <a href="<?php echo esc_url( home_url( '/' ) ); ?>" class="title__anchor" rel="home">
                 <?php bloginfo( 'name' ); ?>
               </a>
-            </p>
+            </h1>
           <?php endif; ?>
         </div>
       </div>
-      <menu>
-        <ul>
-
-        </ul>
-      </menu>
+      <!-- Get list of pages -->
+      <nav>
+        <?php
+          wp_nav_menu( array (
+            'theme_location' => 'my-custom-menu' )
+          );
+        ?>
+      </nav>
     </section>
     <section class="container">
       <header class="header">
         <div class="header__category">
-          <!-- This must pull through from CMS -->
-          <h1 class="header__category-title">Courses</h1>
+          <!-- This assumes the first category is used  -->
+          <h2 class="header__category-title">
+            <?php $cat = get_the_category(); echo $cat[0]->cat_name; ?>
+          </h2>
         </div>
+
         <div class="header__search">
           <?php
           // Check whether the header search is activated in the customizer.

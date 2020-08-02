@@ -1,0 +1,82 @@
+.header {
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+}
+.header__category {}
+.header__category-title {
+  font-weight: 400;
+  font-size: 30px;
+}
+.header__search {}
+
+.search {
+  background-color: transparent;
+  border: 1px solid var(--light-grayish-blue);
+  border-radius: 3px;
+  color: var(--light-grayish-blue);
+  font-size: 16px;
+  padding: 10px;
+  text-align: left;
+  width: 250px;
+}
+
+.logo {
+  align-items: center;
+  display: flex;
+  justify-content: flex-start;
+}
+
+.custom {
+  display: inline-block;
+  padding: 0 10px 0 0;
+}
+.custom-logo {
+  height: auto;
+  width: 45px;
+}
+.custom-logo-link {
+  display: block;
+}
+
+.title {
+  display: inline-block;
+}
+
+
+/* MENU
+
+  No HMTL control yet therefore using tags specificity
+*/
+
+.menu {
+  margin: 10em 0 0;
+}
+
+.menu ul {}
+
+.menu ul li.page_item {
+  margin: 0 0 5px;
+}
+
+.menu ul li.page_item a:before {
+  content: "·";
+  display: inline-block;
+  font-size: 40px;
+  vertical-align: middle;
+  width: 30px;
+  opacity: 0;
+}
+
+.menu ul li.page_item a {
+  color: var(--grayish-blue);
+  font-size: 18px;
+  text-decoration: none;
+}
+
+.menu ul li.page_item a:hover,
+.menu ul li.page_item a:hover:before,
+.menu ul li.page_item a:focus {
+  opacity: 1;
+  color: var(--very-dark-desaturated-blue);
+}

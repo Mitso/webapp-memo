@@ -17,6 +17,7 @@ License version 2.0 (http://www.gnu.org/licenses/gpl-2.0.html)
 */
 
 :root {
+  --grayish-blue: #b8bcc9;
   --light-grayish-blue: #E4E9F3;
   --very-light-grayish-blue: #F7F8FB;
   --very-dark-desaturated-blue: #1d2037;
@@ -30,7 +31,7 @@ html, body {
 
 body {
   background-color: var(--light-grayish-blue);
-  color: #B8BCC9;
+  color: var(--grayish-blue);
   font-family: 'Roboto', Helvetica, Arial, sans-serif;
   font-size: 16px;
   margin: 0;
@@ -42,68 +43,21 @@ h1,h2,h3,h4,h5,h6 {
   color: var(--very-dark-desaturated-blue);
   font-weight: 500;
 }
+h5,h6,p {
+  margin: 5px 0;
+}
 
 a {
   color: var(--very-dark-desaturated-blue);
 }
 
-.wrapper {
-  display: flex;
-  justify-content: space-between;
-}
-.sidebar {
-  background-color: var(--very-light-grayish-blue);
-  padding: 0 4em;
-  width: 15%;
-}
-.container {
-  background: #fff;
-  padding: 0 4em;
-  width: 85%;
-}
-
-
-.header {
-  align-items: center;
-  display: flex;
-  justify-content: space-between;
-}
-.header__category {}
-.header__category-title {
-  font-weight: 600;
-}
-.header__search {}
-
-.search {
-  background-color: transparent;
-  border: 1px solid var(--light-grayish-blue);
-  border-radius: 3px;
-  color: var(--light-grayish-blue);
-  font-size: 16px;
-  padding: 10px;
-  text-align: left;
-  width: 250px;
-}
-
-.logo {}
-.title {}
-.title__name {
-  text-align: left;
-}
-.title__anchor {
-  font-weight: bold;
-  text-decoration: none;
-  text-transform: lowercase;
-}
-
-.article__error {
-  color: var(--very-dark-desaturated-blue);
-  font-size: 18px;
-}
-
-.footer {
-  padding: 1em 0 1em;
-  display: block;
-  overflow: auto;
+img {
+  height: auto;
   width: 100%;
+}
+
+ul, ol {
+  list-style: none;
+  list-style-image: none;
+  padding-left: 0;
 }

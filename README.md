@@ -1,7 +1,6 @@
 # webapp-memo
 Dribble Web Interface
 
-
 ## Local Server Stack - MAMP & MAMP PRO
 MBP app dir -  /Applications/MAMP/htdocs and /Applications/MAMP/conf/ssl
 
@@ -26,7 +25,14 @@ MBP app dir -  /Applications/MAMP/htdocs and /Applications/MAMP/conf/ssl
 ------------------------------------------------------------
 ## Development
 
-Add scss to wordpress theme
+Add scss to wordpress theme.
+
+Assumptions:
+  - Any person landing on the website - we'll assume they have login accounts and are logged in (The feature is not built in)
+  - All courses shown to them are free (The payment feature is not built in)
+    - Listed under All [All posts]
+
+  - Each post has (start course button)
 
 ------------------------------------------------------------
 ## Content
