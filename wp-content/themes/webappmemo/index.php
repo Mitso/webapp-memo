@@ -25,15 +25,13 @@
   </div>
 
   <!-- List articles by filter -->
-  <?php while ( have_posts() ) :
-    the_post();
-    $customDurationField = get_post_meta($post->ID, 'topic_duration', true);
-  ?>
-  <p><?php echo $customStatucMeta; ?></p>
-
-  <div class="article-list">
-
+    <div class="article-list">
+      <?php while ( have_posts() ) :
+        the_post();
+        $customDurationField = get_post_meta($post->ID, 'topic_duration', true);
+      ?>
       <div class="article-list__item">
+        <span class="article__month"><?php the_time('M') ?></span>
         <h3 class="article__title"><?php the_title(); ?></h3>
         <h5 class="article__cat">
           <?php foreach( (get_the_category($post->ID)) as $category) { ?>
@@ -70,9 +68,11 @@
             </a>
           </div>
         <?php endif; ?>
-        <p class="article__body">
-          <?php the_excerpt(__('(more...)')); ?>
-        </p>
+        <div class="article__body">
+          <p class="article__excerpt">
+            <?php the_excerpt(__('(more...)')); ?>
+          </p>
+        </div>
       </div>
     <?php endwhile; ?>
   </div>

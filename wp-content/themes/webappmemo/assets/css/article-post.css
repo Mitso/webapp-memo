@@ -11,10 +11,14 @@
   color: var(--very-dark-desaturated-blue);
   font-size: 18px;
 }
-
-.title__name {
-  text-align: left;
+.article__month {
+  color: var(--light-grayish-blue);
+  display: block;
+  font-size: 60px;
+  font-weight: 700;
+  padding: 15px 0 50px;
 }
+
 .article__subtitle {
   color: var(--very-dark-desaturated-blue);
   font-size: 14px;
@@ -44,8 +48,9 @@
   font-size: 14px;
   padding: 0 10px 0 0;
 }
-.article__tag-value {
-}
+.article__tag-value {}
+
+
 
 /* COURSE FILTERS */
 
