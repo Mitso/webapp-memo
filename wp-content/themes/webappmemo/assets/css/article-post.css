@@ -1,7 +1,8 @@
 .article-list {
   align-items: flex-start;
   display: flex;
-  justify-content: flex-start;
+  display: grid;
+  grid-template-columns: repeat(auto-fill,minmax(260px, 1fr))
 }
 .article-list__item {
   padding: 0 10px;
@@ -40,7 +41,7 @@
   font-size: 14px;
 }
 
-.article__duration:before {
+.article__duration.separator:before {
   content: "|";
   padding: 0 10px 0 0;
 }
@@ -65,6 +66,8 @@
   display: inline-block;
 }
 .filters__label {
+  text-decoration: none;
+  margin: 0 10px 0 0;
   text-transform: capitalize;
 }
 

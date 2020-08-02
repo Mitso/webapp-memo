@@ -11,6 +11,15 @@
 
 
 
+function webapp_js_scripts() {
+	wp_enqueue_script(
+		'main', // name your script so that you can attach other scripts and de-register, etc.
+		get_template_directory_uri() . '/assets/js/main.js', // this is the location of your script file
+		array('jquery') // this array lists the scripts upon which your script depends
+	);
+}
+add_action( 'wp_enqueue_scripts', 'webapp_js_scripts' );
+
 function webapp_theme_support() {
 	/*
 	 * Enable support for Post Thumbnails on posts and pages.
@@ -129,6 +138,35 @@ function webapp_get_custom_logo( $html ) {
 }
 
 add_filter( 'get_custom_logo', 'webapp_get_custom_logo' );
+/**
+ * Filter the except length to 20 words.
+ *
+ * @param int $length Excerpt length.
+ * @return int (Maybe) modified excerpt length.
+ */
+function webapp_custom_excerpt_length( $length ) {
+  return 20;
+}
+add_filter( 'excerpt_length', 'webapp_custom_excerpt_length', 999 );
+
+
+/**
+ * Filter the "read more" excerpt string link to the post.
+ *
+ * @param string $more "Read more" excerpt string.
+ * @return string (Maybe) modified "read more" excerpt string.
+ */
+function webapp_excerpt_more( $more ) {
+  if ( ! is_single() ) {
+    $more = sprintf( '<a class="read-more" href="%1$s">%2$s</a>',
+      get_permalink( get_the_ID() ),
+      __( 'Read More', 'textdomain' )
+    );
+  }
+
+  return $more;
+}
+add_filter( 'excerpt_more', 'webapp_excerpt_more' );
 
 
 /**

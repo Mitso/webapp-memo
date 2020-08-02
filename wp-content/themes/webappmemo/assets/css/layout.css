@@ -4,12 +4,12 @@
 }
 .sidebar {
   background-color: var(--very-light-grayish-blue);
-  padding: 0 4em;
+  padding: 0 4em 4em;
   width: 15%;
 }
 .container {
   background: #fff;
-  padding: 0 4em;
+  padding: 0 4em 4em;
   width: 85%;
 }
 
