@@ -8,14 +8,51 @@
  * @subpackage Web App Memo
  * @since Web App Memo 1.0
  */
+	add_action('wp_ajax_nopriv_filter_function', 'filter_function');
+ add_action('wp_ajax_filter_function', 'filter_function'); // wp_ajax_{ACTION HERE}
 
+
+ function filter_function(){
+  // $args = array(
+ 	//  'orderby' => 'date', // we will sort posts by date
+ 	//  'order'	=> $_POST['date'] // ASC or DESC
+  // );
+
+	$meta_query = array('relation' => 'AND');
+ 	if( isset( $_POST['postfilter'] ) && $_POST['postfilter'] == 'on' )
+		$args['meta_query'] = array( 'relation'=>'AND' );
+
+ 		$args['meta_query'][] = array(
+			'key' => 'topics_status',
+			'value' =>  $_POST['postfilter'],
+			'compare' => 'LIKE'
+ 		);
+
+ 	$query = new WP_Query( $args );
+ 	if( $query->have_posts() ) :
+ 		while( $query->have_posts() ): $query->the_post();
+ 			echo '
+			 	<h3 class="article__title">'. $query->post->post_title. '</h3>
+			';
+ 		endwhile;
+ 		wp_reset_postdata();
+ 	else :
+ 		echo '<p class="article__error">No posts found</p>';
+ 	endif;
+
+ 	die();
+ }
 
 
 function webapp_js_scripts() {
 	wp_enqueue_script(
-		'main', // name your script so that you can attach other scripts and de-register, etc.
+		'ajax', // name your script so that you can attach other scripts and de-register, etc.
 		get_template_directory_uri() . '/assets/js/main.js', // this is the location of your script file
-		array('jquery') // this array lists the scripts upon which your script depends
+		array('jquery'), // this array lists the scripts upon which your script depends
+	);
+
+	wp_localize_script('ajax','wp_ajax',
+		array('ajax_url' => admin_url('admin-ajax.php'))
 	);
 }
 add_action( 'wp_enqueue_scripts', 'webapp_js_scripts' );

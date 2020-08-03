@@ -13,6 +13,8 @@
  *
  * @since 2.1.0
  */
+
+ 
 define( 'DOING_AJAX', true );
 if ( ! defined( 'WP_ADMIN' ) ) {
 	define( 'WP_ADMIN', true );
@@ -158,6 +160,7 @@ add_action( 'wp_ajax_nopriv_heartbeat', 'wp_ajax_nopriv_heartbeat', 1 );
 
 $action = ( isset( $_REQUEST['action'] ) ) ? $_REQUEST['action'] : '';
 
+
 if ( is_user_logged_in() ) {
 	// If no action is registered, return a Bad Request response.
 	if ( ! has_action( "wp_ajax_{$action}" ) ) {
@@ -189,5 +192,7 @@ if ( is_user_logged_in() ) {
 	 */
 	do_action( "wp_ajax_nopriv_{$action}" );
 }
+
+
 // Default status.
 wp_die( '0' );

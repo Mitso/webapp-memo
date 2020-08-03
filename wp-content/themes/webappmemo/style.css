@@ -71,3 +71,31 @@ ul, ol {
   list-style-image: none;
   padding-left: 0;
 }
+
+form {
+  display: inline-block;
+}
+
+input[type="checkbox"] {
+  display: inline-block;
+  vertical-align: middle;
+  margin: 0;
+  opacity: 0;
+}
+
+input[type="checkbox"] ~ label {
+  font-size: 16px;
+  visibility: visible;
+  display: inline-block;
+  cursor: pointer;
+  position: relative;
+}
+
+input[type="submit"] {
+  background: #007cba;
+  border: none;
+  border-radius: 4px;
+  color: #eee;
+  padding: 8px 30px;
+  text-shadow: 0 -1px 1px #006799,1px 0 1px #006799,0 1px 1px #006799,-1px 0 1px #006799;
+}
