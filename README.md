@@ -15,27 +15,25 @@ MBP app dir -  /Applications/MAMP/htdocs and /Applications/MAMP/conf/ssl
 - Backend: PHP or  Python
 - IDE: Atom
 
-- Development Steps:
-  - debugging
-  - performance
-  - test
-  - wordpress version + wordpress compatibility: download and install 1 version down of WordPress, creating multiple development sites, each running different WordPress versions for testing.
-
-
 ------------------------------------------------------------
 ## Development
 
-Add scss to wordpress theme.
-
 Assumptions:
-  - Any person landing on the website - we'll assume they have login accounts and are logged in (The feature is not built in)
+  - Any person landing on the website - we assume they have login accounts and are logged in (The feature is not built in)
   - All courses shown to them are free (The payment feature is not built in)
-    - Listed under All [All posts]
+    - Latest publish posts
 
-  - Each post has (start course button)
+  - The pages do not work
+
+Using the theme:
+ - Run wordpress installation and link it to your localhost db and user account
+ - Select theme
+
+ ![Theme View](https://github.com/Mitso/webapp-memo/theme.png?raw=true)
+
 
 ------------------------------------------------------------
-## Content
+## Posts Dummy Content
 
 Visual Elements of User Interface Design
 The UI/UX Design Specialization brings a design-centric approach to us consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua
