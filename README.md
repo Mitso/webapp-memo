@@ -29,7 +29,7 @@ Using the theme:
  - Run wordpress installation and link it to your localhost db and user account
  - Select theme
 
- ![Theme View](https://github.com/Mitso/webapp-memo/theme.png?raw=true)
+ ![Theme View](https://github.com/Mitso/webapp-memo/blob/master/theme.png?raw=true)
 
 
 ------------------------------------------------------------
