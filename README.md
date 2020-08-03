@@ -31,6 +31,19 @@ Using the theme:
 
  ![Theme View](https://github.com/Mitso/webapp-memo/blob/master/theme.png?raw=true)
 
+ - Create categories & tags: Courses and sub categories ie. Marketing, Design course topics
+ ![Theme View](https://github.com/Mitso/webapp-memo/blob/master/posts.png?raw=true)
+
+ - Create posts and pages   
+ ![Theme View](https://github.com/Mitso/webapp-memo/blob/master/pages.png?raw=true)
+
+
+ ![Theme View](https://github.com/Mitso/webapp-memo/blob/master/posts.png?raw=true)
+
+ - Create custom fields
+ ![Theme View](https://github.com/Mitso/webapp-memo/blob/master/article-view.png?raw=true)
+ ![Theme View](https://github.com/Mitso/webapp-memo/blob/master/custom-tags.png?raw=true)
+
 
 ------------------------------------------------------------
 ## Posts Dummy Content
