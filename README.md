@@ -11,9 +11,8 @@ MBP app dir -  /Applications/MAMP/htdocs and /Applications/MAMP/conf/ssl
  - https://wordpress.org/support/article/creating-database-for-wordpress/
  - https://stackoverflow.com/questions/46383398/xampp-installed-on-mac-not-accessible-via-localhost-only-local-ip
 
-- (Apache + MySQL) or (Nginx + MySQL)
-- Backend: PHP or  Python
-- IDE: Atom
+- (Apache + MySQL)
+- Backend: PHP 
 
 ------------------------------------------------------------
 ## Development
